@@ -47,10 +47,10 @@ class Fishtank {
     $victim.css({ transition: 'all ' + duration });
     $victim.css({
       opacity: '0',
-      width: $victim.width() * 3,
-      height: $victim.height() * 3,
+      width: $victim.width() * 1.5,
+      height: $victim.height() * 1.5
     });
-    setTimeout(() => $victim.remove(), 3000);
+    setTimeout(() => $victim.remove(), 2000);
   }
 
   runPhysics(time) {

@@ -5,6 +5,8 @@ class GoFish extends Fish {
     this.surgeSecondsLeft = 0;
     this.maxSurge = 1.0;
     this.surgMult = 3.0;
+    this.imageUriRight = '/images/go_fish_right.png';
+    this.imageUriLeft = '/images/go_fish_left.png';
   }
 
   updateOneTick() {

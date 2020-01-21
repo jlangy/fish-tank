@@ -41,7 +41,9 @@ class Denizen {
 
   renderRules() {
     return {
-      imageUri: this.imageUri,
+      // imageUri: this.imageUri,
+      //if its a swimming fish, make sure it goes the right way
+      imageUri: (this.swimVelocity && this.swimVelocity.x > 0 ? this.imageUriRight: this.imageUriLeft) || this.imageUri,
       css: {
         width: this.width,
         height: this.height,
